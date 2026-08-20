@@ -29,6 +29,7 @@ jobs:
         upstream_repo_access_token: ${{ secrets.SYNCUPSTREAM_TOKEN }}
         # 策略设置
         test_mode: false # 设为 true 可以测试而不实际推送
+        allow_unrelated_histories: true
 
     - name: Check for errors
       if: failure()
